@@ -18,7 +18,7 @@ st.set_page_config(
 # LOAD DATA AND MODEL
 # ============================================================
 
-df = pd.read_csv("data/nassau_candy_features.csv")
+df = pd.read_csv("nassau_candy_features.csv")
 
 model = joblib.load("best_lead_time_model.pkl")
 
@@ -932,7 +932,7 @@ else:
 # ============================================================
 
 scenario_df.to_csv(
-    "data/scenario_results.csv",
+    "scenario_results.csv",
     index=False
 )
 
